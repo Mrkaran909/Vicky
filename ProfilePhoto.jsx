@@ -5,14 +5,15 @@ import {
   useReducedMotion,
   useSpring,
 } from "framer-motion";
+import profileImg from "./profile.jpg";
 
 /**
  * Professional profile photo card — glass frame, cyan glow, soft 3D tilt.
- * Photo path: put your image at  public/profile.jpg  (or pass `src`).
+ * Photo: profile.jpg is imported from the same folder (or pass `src`).
  * Props: src, name, caption (optional – leave empty to hide).
  */
 export default function ProfilePhoto({
-  src = "/profile.jpg",
+  src = profileImg,
   name = "Vicky Mahato",
   caption = "",
 }) {
